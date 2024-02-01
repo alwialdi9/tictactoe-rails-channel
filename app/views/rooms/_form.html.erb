@@ -1,0 +1,18 @@
+<%= form_with(model: room) do |form| %>
+  <% if room.errors.any? %>
+    <div class="errors">
+      <div class="header"><%= pluralize(room.errors.count, "error") %> prohibited this room from being saved:</div>
+
+      <ul class="error-list">
+        <% room.errors.each do |error| %>
+          <li class="error-list-item">Room <%= error.message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <%= form.label :room %>
+  <%= form.text_field :name %>  
+
+  <%= form.submit %>
+<% end %>
