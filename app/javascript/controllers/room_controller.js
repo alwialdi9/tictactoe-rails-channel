@@ -4,7 +4,6 @@ import { getMetaValue } from "../utils";
 export default class extends Controller {
   connect() {
     console.info('\nConnected to room controller...🎮');
-
     
   }
 

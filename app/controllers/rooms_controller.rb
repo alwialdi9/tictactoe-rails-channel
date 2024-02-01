@@ -3,7 +3,7 @@ class RoomsController < ApplicationController
 
   # GET /rooms or /rooms.json
   def index
-    @room = Room.new
+      @room = Room.new
   end
 
   # GET /rooms/1 or /rooms/1.json
